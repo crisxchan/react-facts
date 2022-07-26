@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: #282D35;
 }
 
 header {
@@ -25,4 +26,28 @@ header > h4 {
     font-size: 16px;
     color: #DEEBF8;
     font-weight: 600;
+}
+
+main {
+    background-color: #282D35;
+    padding: 55px 27px;
+}
+
+main > h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+ul {
+    margin-top: 45px;
+    max-width: 400px;
+}
+
+li {
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-block: 10px;
 }
