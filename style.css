@@ -29,6 +29,9 @@ header > h4 {
 }
 
 main {
+    background-image: url(./src/assets/react-bg.png);
+    background-repeat: no-repeat;
+    background-position: center right;
     background-color: #282D35;
     padding: 55px 27px;
 }
