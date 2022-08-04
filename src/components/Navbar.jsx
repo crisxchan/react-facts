@@ -5,7 +5,13 @@ export default function Navbar() {
         <header>
             <img src={ReactIcon} alt="react logo"/>
             <h3>ReactFacts</h3>
-            <h4>React Course - Project 1</h4>
+            <div id='toggler'>
+                <p id='toggler-light'  className='toggler-label'>Light</p>
+                <div id='toggler-container'>
+                    <div id='toggler-circle'></div>
+                </div>
+                <p id='toggler-dark'  className='toggler-label'>Dark</p>
+            </div>
         </header>
     )
 }

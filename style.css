@@ -59,3 +59,31 @@ li::marker {
     color: #61DAFB;
     font-size: 1.5rem;
 }
+
+/* toggle */
+#toggler {
+    display: flex;
+    align-items: center;
+}
+
+#toggler-container {
+    cursor: pointer;
+    height: 15px;
+    width: 27px;
+    background-color: #2B283A;
+    border-radius: 15px;
+    margin-inline: 6px;
+    border: 1px solid black;
+}
+
+.toggler-label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#toggler-circle {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
