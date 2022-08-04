@@ -7,11 +7,11 @@ export default function Navbar(props) {
             <img src={ReactIcon} alt="react logo"/>
             <h3>ReactFacts</h3>
             <div id='toggler' onClick={props.darkModeHandler}>
-                <p id='toggler-light'  className='toggler-label'>Light</p>
+                <p id='toggler-dark'  className='toggler-label'>Dark</p>
                 <div id="toggler-container">
                     <div id='toggler-circle'></div>
                 </div>
-                <p id='toggler-dark'  className='toggler-label'>Dark</p>
+                <p id='toggler-light'  className='toggler-label'>Light</p>
             </div>
         </header>
     )

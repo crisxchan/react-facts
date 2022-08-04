@@ -1,13 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #282D35;
 }
 
 header {
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     background-color: #21222A;
+    height: 100px;
     padding: 30px 25px;
 }
 
@@ -16,6 +26,7 @@ header > img {
 }
 
 header > h3 {
+    margin: 0;
     font-size: 22px;
     color: #61DAFB;
     font-weight: 700;
@@ -32,8 +43,9 @@ main {
     background-image: url(./src/assets/react-bg.png);
     background-repeat: no-repeat;
     background-position: center right;
-    /* background-color: white; */
+    background-color: #282D35;
     padding: 55px 27px;
+    height: calc(100% - 100px);
 }
 
 main > h1 {
@@ -82,8 +94,8 @@ li::marker {
 }
 
 #toggler-circle {
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     background-color: #222222;
     border-radius: 50%;
     transition: 200ms ease-in-out;
@@ -97,8 +109,10 @@ li::marker {
     color: white;
 }
 
+/* light mode */
 header.light {
     background-color: white;
+    box-shadow: 0 5px 5px #EAEAEA;
 }
 
 header.light #toggler-light {
@@ -116,5 +130,14 @@ header.light #toggler-container {
 
 header.light #toggler-circle {
     background-color: white;
-    transform: translateX(13px);
+    transform: translateX(12px);
 }
+
+main.light {
+    background-color: white;
+}
+
+main.light > h1, main.light > ul > li {
+    color: #2B283A;
+}
+

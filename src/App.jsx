@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <Navbar darkMode={darkMode} darkModeHandler={toggleMode}/>
-      <Main />
+      <Main darkMode={darkMode} />
     </>
   )
 }
