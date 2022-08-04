@@ -5,7 +5,7 @@ export default function Navbar(props) {
         <header className={props.darkMode ? "dark" : "light"}>
             <img src={ReactIcon} alt="react logo"/>
             <h3>ReactFacts</h3>
-            <div id="toggler" onClick={props.darkModeHandler}>
+            <div id="toggler" onClick={props.toggleDarkMode}>
                 <p id="toggler-dark"  className="toggler-label">Dark</p>
                 <div id="toggler-container">
                     <div id="toggler-circle"></div>
